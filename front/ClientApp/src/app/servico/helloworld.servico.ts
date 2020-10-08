@@ -13,15 +13,13 @@ var httpOptions = { headers: new HttpHeaders({ "Content-Type": "application/json
 })
 export class HelloWorldServico {
 
-  private baseURL: string;
-
   url = 'https://localhost:44338/helloworld/';
 
   constructor(private http: HttpClient) {  }
 
-  mostrarHelloWorld(hello: HelloWorld): void /*Observable<HelloWorld>*/ {
+  mostrarHelloWorld(): Observable<HelloWorld> {
 
-    //return this.http.get<HelloWorld>()
+    return this.http.get<HelloWorld>(this.url);
 
   }
 

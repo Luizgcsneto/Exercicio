@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HelloWorldServico } from '../servico/helloworld.servico';
+import { HelloWorld } from '../model/helloworld';
 
 @Component({
   selector: 'app-hello',
@@ -8,13 +9,13 @@ import { HelloWorldServico } from '../servico/helloworld.servico';
 
 export class HelloWorldComponent {
 
-  private 
+  
   constructor(private HelloWorldServico: HelloWorldServico)
   {
 
   }
   mostrarHelloWorld()
   {
-    
+
   }
 }
